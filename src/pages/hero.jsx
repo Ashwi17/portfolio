@@ -84,7 +84,7 @@ function Hero() {
         </div>
       </section>
       {/*========================= My Work Section ============================*/}
-      <section className="projects">
+      <section className="projects" id="project">
         <div className="p-head">
           <div className="intro-text">My Work</div>
           <div className="p-title">

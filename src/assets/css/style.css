@@ -1,8 +1,4 @@
 /* ---------------------------------------------------------------- Header Section start -------------------------------------------------------------------- */
-html, body {
-  overflow-x: hidden;
-}
-
 body {
     margin: 0;
     font-family: "Outfit", sans-serif;
@@ -92,54 +88,9 @@ a {
     transform: scale(1.05);
 }
 
-/*------------*/
-/* Hamburger */
-/*----------*/
-/* HAMBURGER */
-.hamburger {
+.hamburger, .mobile-drawer {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
 }
-
-.hamburger span {
-  width: 28px;
-  height: 3px;
-  background: white;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-/* Hamburger animation */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-/* DRAWER */
-.mobile-drawer {
-    display: none;
-}
-
-.mobile-drawer a {
-  color: white;
-  font-size: 22px;
-}
-
-.drawer-btn {
-  margin-top: 20px;
-  width: 100%;
-}
-
-
 /* ---------------------------------------------------------------- Header Section End -------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- Hero Section Start -------------------------------------------------------------------- */
@@ -797,46 +748,9 @@ a {
 }
 
 @media (max-width: 992px) {
-  .header-right,
-  .talk-button {
+
+  .mobile-drawer {
     display: none;
-  }
-
-    .mobile-drawer {
-    display: flex;       /* 👈 Now drawer renders on mobile */
-    position: fixed;
-    top: 0;
-    right: -500px;       /* Hidden off-screen */
-    width: 250px;
-    height: 100vh;
-
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    padding: 80px 25px;
-    flex-direction: column;
-    gap: 30px;
-
-    transition: right 0.3s ease;
-    z-index: 998;
-    margin-top: 50px;  /* keep your existing spacing */
-  }
-
-    /* Drawer open state */
-  .mobile-drawer.show {
-    right: 0;
-  }
-
-  .drawer-btn {
-    display: block;
-  }
-
-  .hamburger {
-    display: flex;
-    width: auto;
-    justify-content: center;
-    align-items: flex-end;
   }
 
   /*---------------*/
@@ -966,9 +880,61 @@ a {
     padding: 20px 5px;
   }
 
-  .hamburger {
-    margin-right: 0;
+  .header-right, .header-section button {
+    display: none;
   }
+
+/* ============================ */
+/*        Drawer Section       */
+/* ========================== */
+
+/* Drawer base (hidden) */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -4000px;  /* hidden */
+  width: 250px;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  padding: 80px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-drawer a {
+  color: #fff;
+}
+
+/* Drawer visible */
+.mobile-drawer.drawer-open {
+  right: 0;
+}
+
+/* Close button */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+.hamburger {
+  display: block;
+}
     /*-------------------*/
     /* Profile Section */
     /*----------------*/
@@ -1031,6 +997,7 @@ a {
 
     .project-tiles {
       margin-top: 40px;
+      gap: 0;
     }
 
     .project-tiles p {
@@ -1109,13 +1076,6 @@ a {
     .hero-title {
         font-size: 37px;
     }
-    
-    .hamburger {
-        display: flex;
-        width: auto;
-        justify-content: center;
-        align-items: flex-end;
-  }
 
   .hero::before {
         width: 300px;
