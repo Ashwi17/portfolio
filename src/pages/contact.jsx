@@ -35,9 +35,9 @@ const Contact = () => {
             </div>
 
             <div className="contact-wrap2">
-              <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-                <input type="text" name="name" required />
-                <textarea name="message" required></textarea>
+              <form action="https://formsubmit.co/ashwinjoseph1703@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Enter your Name" required />
+                <textarea name="message" placeholder="Enter your message" required></textarea>
                 <button type="submit">Send</button>
               </form>
             </div>
