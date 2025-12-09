@@ -48,8 +48,8 @@ function Header() {
         <Link to="/about" onClick={() => setOpen(false)}>
           About
         </Link>
-        <Link to="#">Projects</Link>
-        <Link to="#">Skills</Link>
+        <HashLink smooth to="#projects">Projects</HashLink>
+        <HashLink smooth to="#skills">Skills</HashLink>
         <Link to="/contact" onClick={() => setOpen(false)}>
           Contact
         </Link>
