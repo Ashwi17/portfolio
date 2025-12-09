@@ -1,6 +1,12 @@
+import "../assets/css/style.css";
+
 const About = () => {
     return (
-        <h1>Hello This is the About Page</h1>
+        <>
+        <div className="about-page">
+            <h1>About Page</h1>
+        </div>
+        </>
     )
 }
 

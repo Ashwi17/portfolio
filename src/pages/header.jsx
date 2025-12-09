@@ -3,7 +3,8 @@ import "../assets/css/style.css";
 import profileIMage from "../assets/images/IMG_20251204_195132.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Hero from "./hero";
+import { HashLink } from "react-router-hash-link"
+
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -21,8 +22,8 @@ function Header() {
           </div>
           <div className="header-right">
             <Link to="/about">About</Link>
-            <Link to="#project">Projects</Link>
-            <Link to="#">Skills</Link>
+            <HashLink smooth to="#projects">Projects</HashLink>
+            <HashLink smooth to="#skills">Skills</HashLink>
             <Link to="/contact">Contact</Link>
           </div>
 

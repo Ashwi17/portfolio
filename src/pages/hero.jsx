@@ -84,7 +84,7 @@ function Hero() {
         </div>
       </section>
       {/*========================= My Work Section ============================*/}
-      <section className="projects" id="project">
+      <section className="projects" id="projects">
         <div className="p-head">
           <div className="intro-text">My Work</div>
           <div className="p-title">
@@ -222,7 +222,7 @@ function Hero() {
         </div>
       </section>
       {/*======================== My Expericence ==============================*/}
-      <section className="my-experience">
+      <section className="my-experience" id="skills">
         <div className="p-head">
           <div className="intro-text">My Expertise</div>
           <div className="p-title">
