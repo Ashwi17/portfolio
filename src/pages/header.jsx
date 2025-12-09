@@ -9,7 +9,7 @@ function Header() {
   const [ open, setOpen ] = useState(false);
 
   return (
-    <header>
+    <header className="header">
       <div className="header-section">
         <div className="header-left">
           <Avatar

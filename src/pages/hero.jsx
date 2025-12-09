@@ -123,7 +123,7 @@ function Hero() {
               {/* Project tiles here */}
 
               <div className="project-tiles">
-                <div className="t-tile">
+                {/* <div className="t-tile">
                   <p>
                     <span className="gradient-text">MVD Virtual PRO</span>
                   </p>
@@ -137,7 +137,7 @@ function Hero() {
                       <div className="p-language">JavaScript</div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="f-tile">
                   <p>
                     <span className="gradient-text">E-commerce Website</span>
