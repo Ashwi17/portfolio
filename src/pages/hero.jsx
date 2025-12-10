@@ -39,7 +39,10 @@ function Hero() {
           <a href="https://github.com/Ashwi17" target="_blank">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/ashwin-joseph-b9289731b" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/ashwin-joseph-b9289731b"
+            target="_blank"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </a>
           <a href="mailto:ashwinjoseph1703@gmail.com" target="_blank">
@@ -192,28 +195,47 @@ function Hero() {
 
               <div className="project-tiles">
                 <div className="f-tile">
-                  <p><span className="gradient-text">Medical Services Application (3rd Year)</span></p>
+                  <p>
+                    <span className="gradient-text">
+                      Bank Website ( 1nd Year )
+                    </span>
+                  </p>
                   <div className="hover-content">
-                    Developed an application which contains most of the medical services which can be done online. <br /><br />
-                    This application contained Services such as take appointments with doctor online and consult them through video calls.
-                    Pepole can donate blood through this app and also all of the registed blood donators will be notified if any urgent blood request occurs.
-                    can contact the nearest Ambulance for emergency cases.
-                    This application contained an online pharmacy where home delivery available.
-                    This is an all round medical application which could be helpful for all people. 
+                    Developed a website for bank, to display bank details.
                   </div>
                 </div>
 
                 <div className="s-tile">
-                  <p><span className="gradient-text">Bank Website ( 1nd Year )</span></p>
+                  <p>
+                    <span className="gradient-text">
+                      Bank Administration Website ( 2st Year )
+                    </span>
+                  </p>
                   <div className="hover-content">
-                    Developed a website for bank, to display bank details. 
+                    Connected frontend of the bank website to MySql and
+                    validated user transactions.
                   </div>
                 </div>
 
                 <div className="t-tile">
-                  <p><span className="gradient-text">Bank Administration Website ( 2st Year )</span></p>
+                  <p>
+                    <span className="gradient-text">
+                      Medical Services Application (3rd Year)
+                    </span>
+                  </p>
                   <div className="hover-content">
-                    Connected frontend of the bank website to MySql and validated user transactions.
+                    Developed an application which contains most of the medical
+                    services which can be done online. <br />
+                    <br />
+                    This application contained Services such as take
+                    appointments with doctor online and consult them through
+                    video calls. Pepole can donate blood through this app and
+                    also all of the registed blood donators will be notified if
+                    any urgent blood request occurs. can contact the nearest
+                    Ambulance for emergency cases. This application contained an
+                    online pharmacy where home delivery available. This is an
+                    all round medical application which could be helpful for all
+                    people.
                   </div>
                 </div>
               </div>
