@@ -21,6 +21,17 @@ function App() {
           }
         />
 
+        {/* Home Page */}
+        <Route
+          path="/home"
+          element={
+            <>
+              <Hero />
+              <Contact />
+            </>
+          }
+        />
+
         {/* About Page */}
         <Route path="/about" element={<About />} />
 

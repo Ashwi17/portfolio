@@ -3,11 +3,12 @@ import "../assets/css/style.css";
 import profileIMage from "../assets/images/IMG_20251204_195132.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link"
-
+import { HashLink } from "react-router-hash-link";
+import Dialog from "@mui/material/Dialog";
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [openAvatar, setOpenAvatar] = useState(false);
 
   return (
     <>
@@ -18,12 +19,18 @@ function Header() {
               alt="Profile"
               src={profileIMage}
               sx={{ width: 56, height: 56 }}
+              onClick={() => setOpenAvatar(true)}
             />
           </div>
           <div className="header-right">
+            <Link to="/home">Home</Link>
             <Link to="/about">About</Link>
-            <HashLink smooth to="#projects">Projects</HashLink>
-            <HashLink smooth to="#skills">Skills</HashLink>
+            <HashLink smooth to="/#projects">
+              Projects
+            </HashLink>
+            <HashLink smooth to="/#skills">
+              Skills
+            </HashLink>
             <Link to="/contact">Contact</Link>
           </div>
 
@@ -48,15 +55,28 @@ function Header() {
         <Link to="/about" onClick={() => setOpen(false)}>
           About
         </Link>
-        <HashLink smooth to="#projects">Projects</HashLink>
-        <HashLink smooth to="#skills">Skills</HashLink>
+        <HashLink smooth to="#projects">
+          Projects
+        </HashLink>
+        <HashLink smooth to="#skills">
+          Skills
+        </HashLink>
         <Link to="/contact" onClick={() => setOpen(false)}>
           Contact
         </Link>
-          <button type="submit" className="talk-button">
-            Let's Talk
-          </button>
+        <button type="submit" className="talk-button">
+          Let's Talk
+        </button>
       </div>
+
+      {/* Popup */}
+      <Dialog open={openAvatar} onClose={() => setOpenAvatar(false)}>
+        <img
+          src={profileIMage}
+          alt="profile"
+          style={{ width: "100%", height: "auto", display: "block" }}
+        />
+      </Dialog>
     </>
   );
 }

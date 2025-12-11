@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import "../assets/css/style.css";
 import profileImage from "../assets/images/IMG_20251204_195132.jpg";
 import { useState } from "react";
@@ -29,8 +30,16 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="btn-primary">View My Work</button>
-          <button className="btn-outline">Get In Touch</button>
+          <button className="btn-primary">
+            <HashLink smooth to="/#projects">
+              View My Work
+            </HashLink>
+          </button>
+          <button className="btn-outline">
+            <HashLink snooth to="/contact">
+              Get In Touch
+            </HashLink>
+          </button>
         </div>
 
         <div className="scroll-down">↓</div>
