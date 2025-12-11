@@ -52,6 +52,9 @@ function Header() {
           <span className="material-icons-outlined">close</span>
         </button>
 
+        <Link to="/home" onClick={() => setOpen(false)}>
+          Home
+        </Link>
         <Link to="/about" onClick={() => setOpen(false)}>
           About
         </Link>
