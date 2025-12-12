@@ -608,7 +608,7 @@ a {
 /* ========================= */
 
 /* slide from left */
-/* .contact-wrap1 {
+.contact-wrap1 {
   animation: slideLeft 1s ease-out both;
   animation-timeline: view();
   animation-range: entry 20% cover 40%;
@@ -641,7 +641,7 @@ a {
     transform: translateX(0);
     opacity: 1;
   }
-} */
+}
 /* ---------------------------------------------------------------- Footer section Start -------------------------------------------------------------------- */
 .footer {
   color: white;
@@ -1301,5 +1301,31 @@ a {
       gap: 14px;
       margin-right: 20px;
     }
+
+    /* =========================== */
+    /*        Animation           */
+    /* ========================= */
+
+    @keyframes slideLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
 /* ---------------------------------------------------------------- Media Query End -------------------------------------------------------------------- */
