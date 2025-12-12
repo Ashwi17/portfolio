@@ -23,7 +23,9 @@ function Header() {
             />
           </div>
           <div className="header-right">
-            <Link to="/home">Home</Link>
+            <HashLink smooth to="/">
+              Home
+            </HashLink>
             <Link to="/about">About</Link>
             <HashLink smooth to="/#projects">
               Projects
@@ -31,7 +33,9 @@ function Header() {
             <HashLink smooth to="/#skills">
               Skills
             </HashLink>
-            <Link to="/contact">Contact</Link>
+            <HashLink smooth to="/#contact">
+              Contact
+            </HashLink>
           </div>
 
           {/* Desktop Button */}
@@ -64,7 +68,7 @@ function Header() {
         <HashLink smooth to="#skills">
           Skills
         </HashLink>
-        <Link to="/contact" onClick={() => setOpen(false)}>
+        <Link to="/#contact" onClick={() => setOpen(false)}>
           Contact
         </Link>
         <button type="submit" className="talk-button">

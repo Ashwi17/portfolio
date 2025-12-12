@@ -11,26 +11,10 @@ function App() {
       {/* Always Visible */}
       <Header />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Contact />
-            </>
-          }
-        />
+        <Route path="/" element={<Hero />} />
 
         {/* Home Page */}
-        <Route
-          path="/home"
-          element={
-            <>
-              <Hero />
-              <Contact />
-            </>
-          }
-        />
+        <Route path="/home" element={<Hero />} />
 
         {/* About Page */}
         <Route path="/about" element={<About />} />
