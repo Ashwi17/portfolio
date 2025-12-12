@@ -56,9 +56,9 @@ function Header() {
           <span className="material-icons-outlined">close</span>
         </button>
 
-        <Link to="/home" onClick={() => setOpen(false)}>
+        <HashLink to="/" onClick={() => setOpen(false)}>
           Home
-        </Link>
+        </HashLink>
         <Link to="/about" onClick={() => setOpen(false)}>
           About
         </Link>
@@ -68,9 +68,9 @@ function Header() {
         <HashLink smooth to="#skills">
           Skills
         </HashLink>
-        <Link to="/#contact" onClick={() => setOpen(false)}>
+        <HashLink smooth to="/#contact" onClick={() => setOpen(false)}>
           Contact
-        </Link>
+        </HashLink>
         <button type="submit" className="talk-button">
           Let's Talk
         </button>
