@@ -330,12 +330,19 @@ function Hero() {
                   placeholder="Enter your Name"
                   required
                 />
-                <textarea
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Enter your E-mail"
+                  required
+                />
+                <input
                   name="message"
                   placeholder="Enter your message"
+                  className="message"
                   required
-                ></textarea>
-                <button type="submit">Send</button>
+                ></input>
+                <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
               </form>
             </div>
           </div>
