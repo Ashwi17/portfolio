@@ -25,6 +25,15 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      <section className="education-section">
+        <div className="education-tiles">
+          <div className="e-tiles">
+            <h1>Diploma in <span className="gradient-text"> Computer engineering</span></h1>
+            <p>Graduated from Govt Polytechnic College Kalamassery</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
