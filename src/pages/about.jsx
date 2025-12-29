@@ -27,10 +27,17 @@ const About = () => {
       </section>
 
       <section className="education-section">
+        <h1>Educational <span className="gradient-text"> Qualifications </span> </h1>
         <div className="education-tiles">
           <div className="e-tiles">
             <h1>Diploma in <span className="gradient-text"> Computer engineering</span></h1>
             <p>Graduated from Govt Polytechnic College Kalamassery</p>
+            <span className="time-line">2022 - 2025</span>
+          </div>
+          <div className="e-tiles">
+            <h1> Higher<span className="gradient-text"> Secondary </span></h1>
+            <p>Completed Higher secondary from St. Mary's Hss Vallarpadam in computer science </p>
+            <span className="time-line">2019 - 2021</span>
           </div>
         </div>
       </section>
