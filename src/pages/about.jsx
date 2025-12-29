@@ -40,6 +40,7 @@ const About = () => {
             <span className="time-line">2019 - 2021</span>
           </div>
         </div>
+
       </section>
     </>
   );

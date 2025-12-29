@@ -695,6 +695,7 @@ a {
   padding: 20px;
   font-size: 20px;
   text-align: justify;
+  margin-bottom: 5rem;
 }
 
 .about-section p {
@@ -728,6 +729,7 @@ a {
   margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem;
 }
 
 .e-tiles {
