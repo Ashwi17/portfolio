@@ -748,6 +748,72 @@ a {
   border: 1px solid gray;
   border-radius: 10px;
 }
+
+/* ============================ */
+/*     Internship Section       */
+/* =========================== */
+.internship-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.i-cards {
+  color: #fff;
+  margin: 30px;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.i-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.i-cards:hover .i-card-inner {
+  transform: rotateY(180deg);
+}
+
+.i-card-front,
+.i-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.i-card-front {
+  background: linear-gradient(90deg, #00eaff, #5151ff);
+  box-shadow: 0px 0px 10px #00eaff, 0px 0px 20px #00eaff;
+  color: white;
+}
+
+.i-card-front h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.i-card-back {
+  background: rgba(71, 69, 69, 0.3);
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 10px #00eaff, 0px 0px 20px #00eaff;
+  text-align: justify;
+  padding: 20px;
+}
+
+#skills {
+  background: radial-gradient(#00eaff, #5151ff);
+}
+
 /* ---------------------------------------------------------------- Media Query Start -------------------------------------------------------------------- */
 /* RESPONSIVE */
 @media (max-width: 1600px) {
@@ -1160,6 +1226,26 @@ a {
   .footer-right {
     margin-right: 20px;
   }
+
+  /* ======================= */
+  /*    Internship Cards    */
+  /* ====================== */
+  .internship-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .i-cards {
+    margin: 10px;
+    width: 400px;
+    height: 600px;
+    margin-bottom: 50px;
+  }
+
+  .i-card-front h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1391,6 +1477,14 @@ a {
   .e-tiles {
     padding: 10px;
     margin: 10px;
+  }
+
+  /* ========================== */
+  /*      Internship Cards      */
+  /* ========================= */
+
+  .internship-section {
+    display: none;
   }
 }
 /* ---------------------------------------------------------------- Media Query End -------------------------------------------------------------------- */
