@@ -92,7 +92,7 @@ const About = () => {
 
                 <div className="i-cards">
           <div className="i-card-inner">
-            <div className="i-card-front" id="skills">
+            <div className="i-card-front" id="soft-skills">
               <h1>Skills</h1>
             </div>
 
