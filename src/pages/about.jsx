@@ -54,62 +54,40 @@ const About = () => {
       </section>
 
       <section className="internship-section">
-        <div className="i-cards">
-          <div className="i-card-inner">
-            <div className="i-card-front">
-              <h1>Internships</h1>
-            </div>
-
-            <div className="i-card-back">
-              <h2>
-                <span className="gradient-text">Internship 1</span>
-              </h2>
-              <p>Took part in a one month PHP Internship from I-Net Infotech</p>
-              <br /> <br />
-              <h2>
-                <span className="gradient-text">Internship 2</span>
-              </h2>
-              <p>
-                Completed a one month internship from Spectrum Softtech
-                Solutions in solving industrial problems using flutter
-              </p>
-              <br /> <br />
-              <h2>
-                <span className="gradient-text">
-                  Industry on Campus progremme
-                </span>
-              </h2>
-              <p>
-                Got an opportunity to lead Full-Stack developers team in
-                industry on campus progremme lead by BMO Human Development
-                PVT.LTD on project Drutham:Wittross Donation controlling
-                platform 1.0
-              </p>
-              <br /> <br />
-            </div>
-          </div>
-        </div>
-
-                <div className="i-cards">
-          <div className="i-card-inner">
-            <div className="i-card-front" id="soft-skills">
-              <h1>Skills</h1>
-            </div>
-
-            <div className="i-card-back">
+          <div className="i-block">
+            <h1>
+              <span className="gradient-text"> Internships</span>
+            </h1>
+            <div className="i-tile">
+              <h2>Internship 1</h2>
               <ul>
                 <li>
-                  <h1><span className="gradient-text">Leadership</span></h1>
+                  <p>
+                    Took part in a one month PHP Internship from I-Net Infotech
+                  </p>
                 </li>
+              </ul>
+              <h2>Internship 2</h2>
+              <ul>
                 <li>
-                  <h1><span className="gradient-text">Time Management</span></h1>
+                  <p>
+                    Completed a one month internship from Spectrum Softtech
+                    Solutions in solving industrial problems using flutter
+                  </p>
                 </li>
+              </ul>
+              <h2>Industry on Campus Progremme</h2>
+              <ul>
                 <li>
-                  <h1><span className="gradient-text">Communication</span></h1>
+                  <p>
+                    Got an opportunity to lead Full-Stack developers team in
+                    industry on campus progremme lead by BMO Human Development
+                    PVT.LTD on project Drutham:Wittross Donation controlling
+                    platform 1.0
+                  </p>
                 </li>
               </ul>
             </div>
-          </div>
         </div>
       </section>
     </>
