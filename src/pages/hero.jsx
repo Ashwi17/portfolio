@@ -1,6 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 import "../assets/css/style.css";
-import profileImage from "../assets/images/IMG_20251204_195132.jpg";
+import profileImage from "../assets/images/018315 ASHWIN copy.jpg";
 import { useState } from "react";
 
 function Hero() {
@@ -342,7 +342,9 @@ function Hero() {
                   className="message"
                   required
                 ></input>
-                <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                <button type="submit">
+                  Send Message <i class="fa-regular fa-paper-plane"></i>
+                </button>
               </form>
             </div>
           </div>

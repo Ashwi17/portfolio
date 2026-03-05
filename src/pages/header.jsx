@@ -1,6 +1,6 @@
 import Avatar from "@mui/material/Avatar";
 import "../assets/css/style.css";
-import profileIMage from "../assets/images/IMG_20251204_195132.jpg";
+import profileIMage from "../assets/images/018315 ASHWIN copy.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
